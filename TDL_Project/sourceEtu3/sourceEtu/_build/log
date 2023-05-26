@@ -1,0 +1,174 @@
+# dune runtest tests/type/avec_fonction/
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu
+# Auto-detected concurrency: 4
+$ /home/ouassel/.opam/default/bin/ocamlc.opt -config > /tmp/dune_02f6fe_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/ouassel/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/home/ouassel/.opam/default/bin"
+#  ; ocaml = Ok External "/home/ouassel/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/home/ouassel/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/ouassel/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/ouassel/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/ouassel/.opam/default/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/ouassel/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/ouassel/.opam/default/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu"
+#        ; "INSIDE_DUNE" :
+#            "/home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/ouassel/Documents/info/TDL_Project/sourceEtu3/sourceEtu/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/home/ouassel/.opam/default/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.1"
+#      ; standard_library_default = "/home/ouassel/.opam/default/lib/ocaml"
+#      ; standard_library = "/home/ouassel/.opam/default/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default/tests/type/avec_fonction && .avec_fonction_type.inline-tests/inline_test_runner_avec_fonction_type.exe inline-test-runner avec_fonction_type -source-tree-root ../../.. -diff-cmd -)
+> File "tests/type/avec_fonction/test.ml", line 36, characters 0-167: testAppel6 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 39, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 43, characters 0-167: testAppel7 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 46, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 50, characters 0-167: testAppel8 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 53, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 57, characters 0-167: testAppel9 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 60, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 64, characters 0-170: testAppel10 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 67, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 71, characters 0-170: testAppel11 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 74, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 78, characters 0-165: testAppel12 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 81, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 85, characters 0-164: testAppel13 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 88, characters 7-30
+>
+> File "tests/type/avec_fonction/test.ml", line 95, characters 0-181: testRetourFonction2 threw Avec_fonction_type.Test.ErreurNonDetectee.
+>   Raised at Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 98, characters 7-30
+>
+> File "../../../../../tests/type/avec_fonction/fichiersRat/testRetourFonction3.rat", line 3, characters 11-12: syntax error.
+> File "tests/type/avec_fonction/test.ml", line 102, characters 0-105: testRetourFonction3 threw Rat.Parser.MenhirBasics.Error.
+>   Raised at Rat__Parser.MenhirBasics._eRR in file "parser.ml" (inlined), line 8, characters 6-17
+>   Called from Rat__Parser._menhir_run_048 in file "parser.ml", line 1411, characters 10-17
+>   Called from Rat__Compilateur.compiler in file "compilateur.ml", line 93, characters 14-45
+>   Re-raised at Rat__Compilateur.compiler in file "compilateur.ml", line 101, characters 6-13
+>   Called from Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 103, characters 10-62
+>
+> File "../../../../../tests/type/avec_fonction/fichiersRat/testRetourFonction4.rat", line 3, characters 14-15: syntax error.
+> File "tests/type/avec_fonction/test.ml", line 105, characters 0-179: testRetourFonction4 threw Rat.Parser.MenhirBasics.Error.
+>   Raised at Rat__Parser.MenhirBasics._eRR in file "parser.ml" (inlined), line 8, characters 6-17
+>   Called from Rat__Parser._menhir_run_048 in file "parser.ml", line 1411, characters 10-17
+>   Called from Rat__Compilateur.compiler in file "compilateur.ml", line 93, characters 14-45
+>   Re-raised at Rat__Compilateur.compiler in file "compilateur.ml", line 101, characters 6-13
+>   Called from Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 107, characters 12-64
+>
+> ../../../../../tests/tam/avec_fonction/fichiersRat/testfun6.rat
+> File "../../../../../tests/tam/avec_fonction/fichiersRat/testfun6.rat", line 24, characters 32-33: syntax error.
+> File "tests/type/avec_fonction/test.ml", line 140, characters 0-138: all_tam threw Rat.Parser.MenhirBasics.Error.
+>   Raised at Rat__Parser.MenhirBasics._eRR in file "parser.ml" (inlined), line 8, characters 6-17
+>   Called from Rat__Parser._menhir_run_048 in file "parser.ml", line 1411, characters 10-17
+>   Called from Rat__Compilateur.compiler in file "compilateur.ml", line 93, characters 14-45
+>   Re-raised at Rat__Compilateur.compiler in file "compilateur.ml", line 101, characters 6-13
+>   Called from Avec_fonction_type__Test.test in file "tests/type/avec_fonction/test.ml", line 133, characters 15-37
+>   Re-raised at Avec_fonction_type__Test.test in file "tests/type/avec_fonction/test.ml", line 134, characters 59-66
+>   Called from Avec_fonction_type__Test.test in file "tests/type/avec_fonction/test.ml", line 137, characters 4-16
+>   Called from Avec_fonction_type__Test.test in file "tests/type/avec_fonction/test.ml", line 137, characters 4-16
+>   Called from Avec_fonction_type__Test.test in file "tests/type/avec_fonction/test.ml", line 137, characters 4-16
+>   Called from Avec_fonction_type__Test.(fun) in file "tests/type/avec_fonction/test.ml", line 143, characters 2-14
+>
+> FAILED 12 / 22 tests
+[2]
