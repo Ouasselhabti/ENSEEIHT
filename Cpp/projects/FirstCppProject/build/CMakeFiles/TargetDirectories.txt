@@ -1,7 +1,0 @@
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/MyProject.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/edit_cache.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/rebuild_cache.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/list_install_components.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/install.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/install/local.dir
-/home/ouassel/Documents/info/Cpp/projects/FirstCppProject/build/CMakeFiles/install/strip.dir
